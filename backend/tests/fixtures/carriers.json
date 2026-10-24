@@ -1,0 +1,6 @@
+{
+  "carriers": [
+    {"code": "IC", "name": "„PKP Intercity” Spółka Akcyjna", "validFrom": "2020-01-01T00:00:00", "validTo": null},
+    {"code": "PR", "name": "POLREGIO S.A.", "validFrom": "2020-01-01T00:00:00", "validTo": null}
+  ]
+}

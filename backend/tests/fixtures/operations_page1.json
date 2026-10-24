@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-10-24T12:00:01.6582106Z",
+  "pagination": {"page": 1, "pageSize": 2, "totalCount": 4, "totalPages": 2, "hasNextPage": true, "hasPreviousPage": false},
+  "trains": [
+    {
+      "scheduleId": 26, "orderId": 1001, "trainOrderId": 1001, "operatingDate": "2026-10-24", "trainStatus": "P",
+      "stations": [
+        {"stationId": 30601, "plannedSequenceNumber": 10, "actualSequenceNumber": 10,
+         "plannedDeparture": "2026-10-24T14:05:00", "actualDeparture": "2026-10-24T14:12:00",
+         "departureDelayMinutes": 7, "isConfirmed": false, "isCancelled": false},
+        {"stationId": 80416, "plannedSequenceNumber": 12, "actualSequenceNumber": 12,
+         "plannedArrival": "2026-10-24T19:47:00", "actualArrival": "2026-10-24T19:52:00",
+         "arrivalDelayMinutes": 5, "isConfirmed": false, "isCancelled": false}
+      ]
+    },
+    {
+      "scheduleId": 26, "orderId": 1002, "operatingDate": "2026-10-24", "trainStatus": "S",
+      "stations": [
+        {"stationId": 30601, "plannedSequenceNumber": 5, "actualSequenceNumber": 5,
+         "plannedDeparture": "2026-10-24T15:30:00", "actualDeparture": "2026-10-24T15:30:00",
+         "isConfirmed": false, "isCancelled": false}
+      ]
+    }
+  ],
+  "stations": {"30601": "Poznań Główny", "80416": "Kraków Główny"}
+}

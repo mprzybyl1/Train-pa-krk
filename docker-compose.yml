@@ -1,0 +1,16 @@
+services:
+  app:
+    build: .
+    image: pociagi-pz-krk:latest
+    container_name: pociagi-pz-krk
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      # cache SQLite: przeżywa restart i aktualizację obrazu (ważne przy limicie dobowym PLK)
+      - pz-data:/app/data
+    # tylko localhost — na zewnątrz wystawia reverse proxy (Caddy/nginx)
+    ports:
+      - "127.0.0.1:8000:8000"
+
+volumes:
+  pz-data:

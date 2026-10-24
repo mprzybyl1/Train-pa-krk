@@ -1,0 +1,22 @@
+{
+  "generatedAt": "2026-10-24T12:00:02Z",
+  "pagination": {"page": 2, "pageSize": 2, "totalCount": 4, "totalPages": 2, "hasNextPage": false, "hasPreviousPage": true},
+  "trains": [
+    {
+      "scheduleId": 26, "orderId": 1004, "operatingDate": "2026-10-24", "trainStatus": "X",
+      "stations": [
+        {"stationId": 30601, "plannedSequenceNumber": 1, "actualSequenceNumber": 1,
+         "plannedDeparture": "2026-10-24T16:00:00", "actualDeparture": null,
+         "departureDelayMinutes": null, "isConfirmed": false, "isCancelled": true}
+      ]
+    },
+    {
+      "scheduleId": 26, "orderId": 5555, "operatingDate": "2026-10-24", "trainStatus": "P",
+      "stations": [
+        {"stationId": 30601, "plannedDeparture": "2026-10-24T13:00:00", "actualDeparture": "2026-10-24T13:03:00",
+         "departureDelayMinutes": 3, "isConfirmed": true, "isCancelled": false}
+      ]
+    }
+  ],
+  "stations": {"30601": "Poznań Główny"}
+}

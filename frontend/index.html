@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Pociągi PZ ⇄ KRK</title>
+  <meta name="description" content="Najbliższe odjazdy Poznań Główny ⇄ Kraków Główny z opóźnieniem i peronem.">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="color-scheme" content="dark">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="PZ ⇄ KRK">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div id="ptr" class="ptr" aria-hidden="true"><span class="ptr-spinner"></span><span class="ptr-label">Puść, aby odświeżyć</span></div>
+
+  <header class="top">
+    <h1 class="brand">PZ <span class="swap">⇄</span> KRK</h1>
+    <span id="demo" class="demo" hidden>DEMO</span>
+    <button id="age" class="age" type="button" title="Odśwież">…</button>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button role="tab" class="tab" data-dir="pz-krk" aria-selected="true">Poznań → Kraków</button>
+    <button role="tab" class="tab" data-dir="krk-pz" aria-selected="false">Kraków → Poznań</button>
+  </nav>
+
+  <p id="notice" class="notice" hidden></p>
+
+  <main class="board">
+    <section class="col" data-dir="pz-krk" aria-label="Poznań Główny → Kraków Główny">
+      <h2 class="col-title">Poznań Gł. <span>→</span> Kraków Gł.</h2>
+      <ol class="list" aria-live="polite"></ol>
+    </section>
+    <section class="col" data-dir="krk-pz" aria-label="Kraków Główny → Poznań Główny">
+      <h2 class="col-title">Kraków Gł. <span>→</span> Poznań Gł.</h2>
+      <ol class="list" aria-live="polite"></ol>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span>Dane: PKP PLK — Otwarte Dane Kolejowe. Peron/tor wg rozkładu.</span>
+    <span id="push-hint" hidden></span>
+  </footer>
+
+  <div id="toast" class="toast" role="status" hidden></div>
+
+  <template id="row">
+    <li class="dep">
+      <div class="times">
+        <span class="t-main"></span>
+        <span class="t-sub"></span>
+      </div>
+      <div class="meta">
+        <span class="delay"></span>
+        <span class="until"></span>
+      </div>
+      <div class="info">
+        <div class="train"></div>
+        <div class="line2">
+          <span class="carrier"></span>
+          <span class="eta"></span>
+        </div>
+      </div>
+      <div class="plat">
+        <span class="p-label">peron</span>
+        <span class="p-val"></span>
+        <span class="tr"></span>
+      </div>
+      <button class="bell" type="button" aria-label="Obserwuj ten pociąg" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22Zm7-6V11a7 7 0 0 0-5.5-6.84V3a1.5 1.5 0 0 0-3 0v1.16A7 7 0 0 0 5 11v5l-2 2v1h18v-1l-2-2Z"/></svg>
+      </button>
+    </li>
+  </template>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+{
+  "generatedAt": "2026-10-24T03:30:02.1234567Z",
+  "period": {"from": "2026-10-23", "to": "2026-10-25"},
+  "routes": [
+    {
+      "scheduleId": 26, "orderId": 1001, "name": "Przykładowy", "carrierCode": "IC",
+      "nationalNumber": "38170", "commercialCategorySymbol": "IC",
+      "operatingDates": ["2026-10-24", "2026-10-25"],
+      "stations": [
+        {"stationId": 30601, "orderNumber": 10, "departureTime": "14:05:00", "departureDay": 0,
+         "departurePlatform": "3", "departureTrack": "6", "departureTrainNumber": "38170",
+         "departureCommercialCategory": "IC", "stopTypeId": 1},
+        {"stationId": 12345, "orderNumber": 11, "arrivalTime": "15:40:00", "departureTime": "15:42:00"},
+        {"stationId": 80416, "orderNumber": 12, "arrivalTime": "19:47:00", "arrivalDay": 0,
+         "arrivalPlatform": "4", "arrivalTrack": "7"}
+      ]
+    },
+    {
+      "scheduleId": 26, "orderId": 1002, "name": null, "carrierCode": "IC",
+      "nationalNumber": "081600", "commercialCategorySymbol": "TLK",
+      "operatingDates": ["2026-10-24"],
+      "stations": [
+        {"stationId": 30601, "orderNumber": 5, "departureTime": "15:30:00", "departureDay": 0,
+         "departurePlatform": null, "departureTrack": "", "departureCommercialCategory": "TLK"},
+        {"stationId": 80416, "orderNumber": 9, "arrivalTime": "21:10:00", "arrivalDay": 0,
+         "arrivalPlatform": "2", "arrivalTrack": "4"}
+      ]
+    },
+    {
+      "scheduleId": 26, "orderId": 1003, "name": "Nocny", "carrierCode": "IC",
+      "nationalNumber": "48100", "commercialCategorySymbol": "TLK",
+      "operatingDates": ["2026-10-24"],
+      "stations": [
+        {"stationId": 30601, "orderNumber": 3, "departureTime": "00:15:00", "departureDay": 1,
+         "departurePlatform": "1", "departureTrack": "2"},
+        {"stationId": 80416, "orderNumber": 8, "arrivalTime": "06:05:00", "arrivalDay": 1}
+      ]
+    },
+    {
+      "scheduleId": 26, "orderId": 1004, "name": "Odwołany", "carrierCode": "IC",
+      "nationalNumber": "38172", "commercialCategorySymbol": "IC",
+      "operatingDates": ["2026-10-24"],
+      "stations": [
+        {"stationId": 30601, "orderNumber": 1, "departureTime": "16:00:00", "departureDay": 0,
+         "departurePlatform": "2", "departureTrack": "4"},
+        {"stationId": 80416, "orderNumber": 4, "arrivalTime": "21:30:00", "arrivalDay": 0}
+      ]
+    },
+    {
+      "scheduleId": 26, "orderId": 1005, "name": "W drugą stronę", "carrierCode": "IC",
+      "nationalNumber": "83170", "commercialCategorySymbol": "IC",
+      "operatingDates": ["2026-10-24"],
+      "stations": [
+        {"stationId": 80416, "orderNumber": 1, "departureTime": "14:30:00", "departureDay": 0},
+        {"stationId": 30601, "orderNumber": 2, "arrivalTime": "20:00:00", "arrivalDay": 0}
+      ]
+    },
+    {
+      "scheduleId": 26, "orderId": 1006, "name": "Tylko wysiadanie", "carrierCode": "PR",
+      "nationalNumber": "77001", "commercialCategorySymbol": "REG",
+      "operatingDates": ["2026-10-24"],
+      "stations": [
+        {"stationId": 30601, "orderNumber": 1, "arrivalTime": "14:50:00", "departureTime": null},
+        {"stationId": 80416, "orderNumber": 2, "arrivalTime": "20:50:00"}
+      ]
+    },
+    {
+      "scheduleId": 26, "orderId": 1007, "name": "Późny", "carrierCode": "IC",
+      "nationalNumber": "38174", "commercialCategorySymbol": "IC",
+      "operatingDates": ["2026-10-24"],
+      "stations": [
+        {"stationId": 30601, "orderNumber": 1, "departureTime": "PT19H20M", "departureDay": 0,
+         "departurePlatform": "5", "departureTrack": "9"},
+        {"stationId": 80416, "orderNumber": 2, "arrivalTime": "1.01:05:00"}
+      ]
+    }
+  ],
+  "dictionaries": {
+    "carriers": {"IC": "„PKP Intercity” Spółka Akcyjna", "PR": {"name": "POLREGIO S.A."}},
+    "stations": {"30601": "Poznań Główny", "80416": "Kraków Główny"}
+  }
+}
